@@ -174,8 +174,11 @@
 			transform: translate(0%, -50%);			
 			color: @white;	
 			@media @media-screen {
-				bottom: 40px;
+				bottom: 60px;
 				top: inherit;
+			}
+			@media @media-size-xxl {
+				bottom: 40px;
 			}
 		}
 	}
@@ -195,7 +198,8 @@
 		.owl-carousel.is--portfolio &{
 			left: 0;
 			@media @media-screen {
-				left: 6%;
+				//left: 6%;
+				left: 70px;
 			}
 		}
 	}
@@ -215,7 +219,9 @@
 		.owl-carousel.is--portfolio &{
 			right: 0;
 			@media @media-screen {
-				right: 82.5%;
+				//right: 82.5%;
+				right: inherit;
+				left: 250px;
 			}
 		}
 	}
@@ -250,12 +256,20 @@
 			.calcFontSize(18, 23, 320, 1680);
 			.calcLineHeight(20, 26, 320, 1680);
 			color: @white;
-			bottom: 40px;
-			left: 8.5%;
+			//left: 8.5%;
+			left: 120px;
 			z-index: 2;
 			transform: translateX(0);
 			@media @media-device {
 				display: none;
+			}
+			@media @media-screen {
+				font-size: 24px;
+				line-height: 26px;
+				bottom: 60px;
+			}
+			@media @media-size-xxl {
+				bottom: 40px;
 			}
 		}
 	}
@@ -272,6 +286,10 @@
 				.calcFontSize(36, 56, 320, 1680);
 				.calcLineHeight(38, 58, 320, 1680);
 				font-weight: 700;
+				@media @media-screen {
+					font-size: 56px;
+					line-height: 58px;
+				}
 			}
 		}
 		.owl-count__block.is--about &{

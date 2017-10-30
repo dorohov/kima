@@ -2545,6 +2545,11 @@ body.rtl .formError .formErrorArrow {
 				margin-bottom: 5vw;
 			}
 		}
+		&.is--hidden-device{
+			@media @media-device {
+				display: none;
+			}
+		}
 	}
 	&row{
 		@media @media-device-lg {
@@ -2903,11 +2908,18 @@ body.rtl .formError .formErrorArrow {
 		@media @media-device {
 			margin-bottom: 1px;
 		}
+		@media @media-size-md{
+			height: ~"calc(100vh - @{navbar-md} - @{footer-screen})";
+		}
+		@media @media-screen-lg {
+			height: ~"calc(100vh - @{navbar-screen} - @{footer-screen})";
+		}
 	}
 	&inner{		
 		width: 100%;
-		padding: 15px;
+		padding: 15px 15px 0;
 		@media @media-screen {
+			padding: 15px;
 			background-color: fadeout(@white, 10%);
 			position: absolute;
 			z-index: 2;
@@ -2924,6 +2936,11 @@ body.rtl .formError .formErrorArrow {
 		@media @media-size-xxl {			
 			right: 6%;
 			width: 43%;
+		}
+		&.is--hidden-screen{
+			@media @media-screen {
+				display: none;
+			}
 		}
 	}
 	&scroll{
@@ -2963,7 +2980,11 @@ body.rtl .formError .formErrorArrow {
 			margin: 0;	
 			position: absolute;
 			z-index: 2;
-			bottom: 0;
+			//bottom: 0;
+			bottom: 20px;
+			left: 70px;
+		}
+		@media @media-size-xxl {			
 			bottom: 6.5%;
 			left: 33.6%;
 		}
@@ -3495,6 +3516,7 @@ blockquote {
 		height: 34px;
 		display: block;
 		&, &:focus, &:hover{color: @black;}
+		&:hover{color: @b-color-a;}
 		svg{display: block;}
 	}
 }

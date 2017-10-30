@@ -1,7 +1,9 @@
 <div data-owl-item="{{block_item}}">
-	<picture> 
-		<source media="(min-width: 1025px)" 
-				srcset="{{block_preview}}">
-		<img src="{{block_preview_xs}}" alt="">
-	</picture>
+	<a href="{{block_preview}}" class="{{block_prefix}}slider-link" data-fancybox="{{block_fancybox}}">
+		<picture> 
+			<source media="(min-width: 1025px)" 
+					srcset="{{block_preview}}">
+			<img src="{{block_preview_xs}}" alt="">
+		</picture>
+	</a>
 </div>

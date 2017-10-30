@@ -1,6 +1,131 @@
+
+<div class="{{block_prefix}}inner  is--hidden-screen"> 
+	<div class="page-header-panel__block">
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/heading.html" 
+			header_prefix="page-header__" 
+			header_mod="is--heading  is--portfolio-card"
+			header_level="h1"
+			header="{{block_heading}}"
+		]]	
+	</div>
+</div>
+<ul class="{{block_prefix}}tabs-nav">
+	<li class="{{block_prefix}}tabs-nav-item  active">
+		<a href="#portfolio-slider-1" data-toggle="tab" class="{{block_prefix}}tabs-nav-link">Экстерьер</a>
+	</li>
+	<li class="{{block_prefix}}tabs-nav-item">
+		<div class="{{block_prefix}}tabs-nav-link  is--active">/</div>
+	</li>
+	<li class="{{block_prefix}}tabs-nav-item"> 
+		<a href="#portfolio-slider-2" data-toggle="tab" class="{{block_prefix}}tabs-nav-link">Интерьер</a>
+	</li>
+</ul>
+<div class="{{block_prefix}}tabs-content">
+	<div class="{{block_prefix}}tabs-pane fade in active" id="portfolio-slider-1">
+		<div class="{{block_prefix}}owl-block">
+			<div class="owl-portfolio  {{block_prefix}}owl  is--portfolio">
+				[[azbntple 
+					tpl="/src/block/site/default/portfolio/card-slider.html" 
+					block_item="01"
+					block_preview="{{url-path-img}}/temp/portfolio-slider-item1-1440x810.jpg"
+					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item1-520x290.jpg"
+					block_prefix="portfolio-card__"
+					block_fancybox="portfolio-gallery1"
+				]]
+				[[azbntple 
+					tpl="/src/block/site/default/portfolio/card-slider.html" 
+					block_item="02"
+					block_preview="{{url-path-img}}/temp/portfolio-slider-item2-1440x810.jpg"
+					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item2-520x290.jpg"
+					block_prefix="portfolio-card__"
+					block_fancybox="portfolio-gallery1"
+				]]	
+				[[azbntple 
+					tpl="/src/block/site/default/portfolio/card-slider.html" 
+					block_item="03"
+					block_preview="{{url-path-img}}/temp/portfolio-slider-item1-1440x810.jpg"
+					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item1-520x290.jpg"
+					block_prefix="portfolio-card__"
+					block_fancybox="portfolio-gallery1"
+				]]
+				[[azbntple 
+					tpl="/src/block/site/default/portfolio/card-slider.html" 
+					block_item="04"
+					block_preview="{{url-path-img}}/temp/portfolio-slider-item2-1440x810.jpg"
+					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item2-520x290.jpg"
+					block_prefix="portfolio-card__"
+					block_fancybox="portfolio-gallery1"
+				]]	
+				[[azbntple 
+					tpl="/src/block/site/default/portfolio/card-slider.html" 
+					block_item="05"
+					block_preview="{{url-path-img}}/temp/portfolio-slider-item1-1440x810.jpg"
+					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item1-520x290.jpg"
+					block_prefix="portfolio-card__"
+					block_fancybox="portfolio-gallery1"
+				]]
+			</div>	
+			<div class="owl-count__block  is--portfolio">
+				<span class="owl-count__item  is--count">01</span>
+				<span class="owl-count__item">/05</span>
+			</div>
+		</div>
+	</div>
+	<div class="{{block_prefix}}tabs-pane fade" id="portfolio-slider-2">				
+		<div class="{{block_prefix}}owl-block">
+			<div class="owl-portfolio  {{block_prefix}}owl  is--portfolio">
+				[[azbntple 
+					tpl="/src/block/site/default/portfolio/card-slider.html" 
+					block_item="01"
+					block_preview="{{url-path-img}}/temp/portfolio-slider-item3-1440x810.jpg"
+					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item3-520x290.jpg"
+					block_prefix="portfolio-card__"
+					block_fancybox="portfolio-gallery2"
+				]]
+				[[azbntple 
+					tpl="/src/block/site/default/portfolio/card-slider.html" 
+					block_item="02"
+					block_preview="{{url-path-img}}/temp/portfolio-slider-item4-1440x810.jpg"
+					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item4-520x290.jpg"
+					block_prefix="portfolio-card__"
+					block_fancybox="portfolio-gallery2"
+				]]
+				[[azbntple 
+					tpl="/src/block/site/default/portfolio/card-slider.html" 
+					block_item="03"
+					block_preview="{{url-path-img}}/temp/portfolio-slider-item3-1440x810.jpg"
+					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item3-520x290.jpg"
+					block_prefix="portfolio-card__"
+					block_fancybox="portfolio-gallery2"
+				]]
+				[[azbntple 
+					tpl="/src/block/site/default/portfolio/card-slider.html" 
+					block_item="04"
+					block_preview="{{url-path-img}}/temp/portfolio-slider-item4-1440x810.jpg"
+					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item4-520x290.jpg"
+					block_prefix="portfolio-card__"
+					block_fancybox="portfolio-gallery2"
+				]]
+				[[azbntple 
+					tpl="/src/block/site/default/portfolio/card-slider.html" 
+					block_item="05"
+					block_preview="{{url-path-img}}/temp/portfolio-slider-item3-1440x810.jpg"
+					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item3-520x290.jpg"
+					block_prefix="portfolio-card__"
+					block_fancybox="portfolio-gallery2"
+				]]
+			</div>
+			<div class="owl-count__block  is--portfolio">
+				<span class="owl-count__item  is--count">01</span>
+				<span class="owl-count__item">/05</span>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="{{block_prefix}}inner"> 
 	<div class="mCustomScrollbar {{block_prefix}}scroll" data-mcs-theme="gold">
-		<div class="page-header-panel__block">
+		<div class="page-header-panel__block  is--hidden-device">
 			[[azbntple 
 				tpl="/src/block/site/default/page-header/heading.html" 
 				header_prefix="page-header__" 
@@ -60,99 +185,6 @@
 				<li>Астахова Мария&nbsp;— главный архитектор</li>
 				<li>Захарова Галина&nbsp;— дизайнер.</li>
 			</ul>
-		</div>
-	</div>
-</div>
-<ul class="{{block_prefix}}tabs-nav">
-	<li class="{{block_prefix}}tabs-nav-item  active">
-		<a href="#portfolio-slider-1" data-toggle="tab" class="{{block_prefix}}tabs-nav-link">Экстерьер</a>
-	</li>
-	<li class="{{block_prefix}}tabs-nav-item">
-		<div class="{{block_prefix}}tabs-nav-link  is--active">/</div>
-	</li>
-	<li class="{{block_prefix}}tabs-nav-item"> 
-		<a href="#portfolio-slider-2" data-toggle="tab" class="{{block_prefix}}tabs-nav-link">Интерьер</a>
-	</li>
-</ul>
-<div class="{{block_prefix}}tabs-content">
-	<div class="{{block_prefix}}tabs-pane fade in active" id="portfolio-slider-1">
-		<div class="{{block_prefix}}owl-block">
-			<div class="owl-portfolio  {{block_prefix}}owl  is--portfolio">
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="01"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item1-1440x810.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item1-520x290.jpg"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="02"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item2-1440x810.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item2-520x290.jpg"
-				]]	
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="03"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item1-1440x810.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item1-520x290.jpg"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="04"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item2-1440x810.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item2-520x290.jpg"
-				]]	
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="05"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item1-1440x810.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item1-520x290.jpg"
-				]]
-			</div>	
-			<div class="owl-count__block  is--portfolio">
-				<span class="owl-count__item  is--count">01</span>
-				<span class="owl-count__item">/05</span>
-			</div>
-		</div>
-	</div>
-	<div class="{{block_prefix}}tabs-pane fade" id="portfolio-slider-2">				
-		<div class="{{block_prefix}}owl-block">
-			<div class="owl-portfolio  {{block_prefix}}owl  is--portfolio">
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="01"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item3-1440x810.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item3-520x290.jpg"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="02"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item4-1440x810.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item4-520x290.jpg"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="03"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item3-1440x810.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item3-520x290.jpg"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="04"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item4-1440x810.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item4-520x290.jpg"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="05"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item3-1440x810.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item3-520x290.jpg"
-				]]
-			</div>
-			<div class="owl-count__block  is--portfolio">
-				<span class="owl-count__item  is--count">01</span>
-				<span class="owl-count__item">/05</span>
-			</div>
 		</div>
 	</div>
 </div>

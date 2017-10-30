@@ -1,0 +1,31 @@
+{
+	"contacts":{
+		"name":"Kima architects",
+		"domain":"kima-arch.ru",
+		"domain_link":"http://kima-arch.ru/",
+		"agreement_page":"agreement",
+		"copyright":"Все права защищены",
+		"email":"k.ivanov@kima-arch.ru",
+		"email_name":"<span>k.ivanov</span>@kima-arch.ru",
+		"phone":"+7 (812) <span>988-06-26</span>",  
+		"phone_tel":"+78129880626", 
+		"phone_manager":"+7 (952) <span>288-06-26</span>",  
+		"phone_manager_tel":"+79522880626",  
+		"address":"<span>г.&nbsp;Санкт-Петербург,</span> Английский&nbsp;пр., д.&nbsp;38"
+	},
+	"soc":{
+		"vk":"https://vk.com/",
+		"fb":"https://www.facebook.com/",
+		"inst":"https://www.instagram.com/"
+	},
+	"url-path-css":"/wp-content/themes/azbnbasetheme/css",
+	"url-path-css":"/css",
+	"url-path-img":"/wp-content/themes/azbnbasetheme/img",
+	"url-path-img":"/img",
+	"url-path-js":"/wp-content/themes/azbnbasetheme/js",
+	"url-path-js":"/js",
+	"url-path-plugins":"/wp-content/themes/azbnbasetheme/plugins",
+	"url-path-plugins":"/plugins",
+	"url-path-favicon":"/wp-content/themes/azbnbasetheme/favicon",
+	"url-path-favicon":"/favicon"
+}

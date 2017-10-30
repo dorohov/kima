@@ -1,0 +1,31 @@
+<article class="{{block_prefix}}item">
+	<div class="{{block_prefix}}date-block">
+		<div class="{{block_prefix}}row row">
+			<div class="{{block_prefix}}cols cols">
+				<time class="{{block_prefix}}date" datatime="{{block_date_iso}}"><span>{{block_date}}</span>.2017 г.</time>
+			</div>
+			<div class="{{block_prefix}}cols cols  is--soc">
+				<a href="#" class="{{block_prefix}}soc-link">
+					[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="{{block_soc}}" ]]
+				</a>
+			</div>
+		</div>
+	</div>
+	<a href="{{block_link}}" class="{{block_prefix}}preview">
+		<img src="https://placeholdit.imgix.net/~text?txtsize=30&txt=385x185&w=385&h=185" alt="">
+	</a> 	
+	<div class="{{block_prefix}}note">
+		
+		<h4 class="{{block_prefix}}heading"><a href="{{block_link}}">{{block_heading}}</a></h4>
+		<div class="{{block_prefix}}text-block  text__block">{{block_note}}</div>
+		<div class="{{block_prefix}}btn">
+			[[azbntple 
+				tpl="/src/block/site/default/button/link.html"
+				button_prefix="btn-link__" 
+				button_mod="  "
+				button_link="{{block_link}}"
+				button_name="Читать подробнее"
+			]]		
+		</div>
+	</div>  
+</article>

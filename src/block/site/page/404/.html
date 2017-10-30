@@ -1,0 +1,33 @@
+<div class="content-block {{block_prefix}}block" role="main">
+	<div class="container content-block__container {{block_prefix}}container ">
+		<div class="{{block_prefix}}note">
+			<div class="{{block_prefix}}inner">
+				<div class="page-header-panel__block">	
+					<div class="page-header-panel__row row  is--jcsb  is--aic">	
+						<div class="page-header-panel__cols cols  is--heading  is--vacancy">	
+							[[azbntple 
+								tpl="/src/block/site/default/page-header/group.html" 
+								header_prefix="page-header__" 
+								header_mod="is--heading  is--404"
+								header_level="h1"
+								header="{{block_heading}}"
+								header_small_level="div"
+								header_small="{{block_heading_small}}"
+							]]	
+						</div>						
+					</div> 
+				</div>
+				<div class="{{block_prefix}}btn">
+					[[azbntple 
+						tpl="/src/block/site/default/button/link.html"
+						button_prefix="btn__" 
+						button_mod="is--sm"
+						button_link="/#"
+						button_name="Ha главную"
+					]] 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="{{block_prefix}}bg"  style="background-image: url({{url-path-img}}/temp/{{block_bg}});"></div>
+</div>

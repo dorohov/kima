@@ -1,0 +1,57 @@
+<div class="content-block {{block_prefix}}block" role="main">
+	<div class="container {{block_prefix}}container">
+		[[azbntple 
+			tpl="/src/block/site/default/portfolio/block-index-tabs.html" 
+			portfolio_prefix="portfolio-tabs__" 
+		]] 
+
+		<div class="{{block_prefix}}note">
+			<div class="{{block_prefix}}note-inner">					
+				[[azbntple 
+					tpl="/src/block/site/default/page-header/group.html" 
+					header_prefix="page-header__" 
+					header_mod="is--heading  is--index"
+					header_level="h1"
+					header="{{block_heading}}"
+					header_small_level="div"
+					header_small="{{block_heading_small}}"
+				]]	
+				[[azbntple 
+					tpl="/src/block/site/default/button/link.html"
+					button_prefix="btn__" 
+					button_mod="is--xl"
+					button_link="/portfolio.html"
+					button_name="В портфолио"
+				]]
+			</div>
+		</div>
+		<div class="{{block_prefix}}slider">
+			<div id="carousel-index" class="carousel slide {{block_prefix}}carousel carousel-fade" data-pause="false" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item {{block_prefix}}slider-item  active" data-heading="Клубный дом Атлант" style="background-image: url({{url-path-img}}/temp/bg-index-slider-item1-1415x960.jpg)">
+					</div>
+					<div class="item {{block_prefix}}slider-item" data-heading="ЖК Питер" style="background-image: url({{url-path-img}}/temp/bg-index-slider-item2-1415x960.jpg)">
+					</div>
+					<div class="item {{block_prefix}}slider-item" data-heading="ЖК Атлант" style="background-image: url({{url-path-img}}/temp/bg-index-slider-item3-1415x960.jpg)">
+					</div>
+				</div>
+				<div class="{{block_prefix}}slider-legend">
+					<div class="{{block_prefix}}slider-legend-item">
+						<a class="{{block_prefix}}slider-control  is--prev" href="#carousel-index" data-slide="prev">
+							[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="owl-prev-400" ]]
+						</a>
+					</div>
+					<div class="{{block_prefix}}slider-legend-item">				
+						<div class="{{block_prefix}}slider-legend-name"></div>	
+					</div>
+					<div class="{{block_prefix}}slider-legend-item">
+						<a class="{{block_prefix}}slider-control  is--next" href="#carousel-index" data-slide="next">
+							[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="owl-next-400" ]]
+						</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,120 @@
+.index-page__{
+	&block{
+		position: relative;
+		overflow: hidden;
+		@media @media-device {
+			padding-top: 15px;
+			padding-bottom: 45px;
+		}
+		@media @media-size-sm-p {
+			display: flex;
+    		align-items: center;
+    		height: ~"calc(100vh - 66px - 50px)";
+		}
+	}
+	&container{
+		@media @media-size-md {
+			height: ~"calc(100vh - @{navbar-device})";			
+		}
+		@media @media-screen-lg {
+		    height: 100vh;
+		}
+	}
+	&note{
+		display: flex;
+		align-items: center;
+		height: 100%;
+		position: relative;
+		z-index: 2;
+		@media @media-device {
+			margin-bottom: 35px;
+		}
+		@media @media-screen {
+			max-width: 630px; 
+			width: 40vw;
+		}
+	}
+	&note-inner{
+		@media @media-screen {
+			max-width: 630px; 
+			width: 40vw;
+		}
+	}
+	&slider{
+		@media @media-size-sm {
+			max-width: 730px;
+			height: 545px;
+			padding-bottom: 50px;
+		}
+		@media @media-screen {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			right: 0;
+			max-width: 1415px;
+			max-height: 100vh;
+			height: ~"calc(100vh - @{navbar-device} - @{footer-screen})";
+			width: 64vw;
+		}
+		@media @media-screen-lg {
+			top: @navbar-screen;
+			height: ~"calc(100vh - @{navbar-screen} - @{footer-screen})";
+		}
+		@media @media-size-xxl {
+			width: 74vw;
+		}
+	}
+	&slider-item{
+		@media @media-size-xs {
+			height: 305px;
+		}
+		//@media @media-screen {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		//}
+	}
+	&slider-legend{
+		//left: 4.5vw;
+		//bottom: 28px;
+		//color: white;
+		display: flex;
+		align-items: center;
+		min-height: 40px;
+    	color: @black;
+    	@media @media-size-xs {
+    		justify-content: center;
+    	}
+		@media @media-device {
+			margin-top: 10px;
+		}
+		@media @media-screen {
+			position: absolute;
+			z-index: 5;
+	   		right: 6vw;
+    		bottom: -45px;
+		}
+		@media @media-size-md {right: 4vw;}
+		@media @media-screen-lg {right: 6vw;}
+	}
+	&slider-legend-inner{
+		overflow: visible;
+	}
+	&slider-legend-item{}
+	&slider-legend-name{
+		padding: 0 10px;
+		font-weight: 500;
+		text-align: center;
+		font-size: @b-fs;
+		line-height: @b-lh - 4;
+		width: 210px;
+		@media @media-notsmart{width: 250px;}
+	}
+	&slider-control{
+		width: 34px;
+		height: 34px;
+		display: block;
+		&, &:focus, &:hover{color: @black;}
+		svg{display: block;}
+	}
+}

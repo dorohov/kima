@@ -20,19 +20,21 @@
 		background-color: @navbar-bg-screen;
 		padding-top: 20px;
 		padding-bottom: 20px; 
+		position: fixed;
+		width: 100%;
 		&.opacity{
-			opacity: 0;
-			transform: translateY(-100%);
-			transition: @trs-site;			
+			//opacity: 0;
+			//transform: translateY(-100%);
+			//transition: @trs-site;			
 		}
 		&.fixed{
-			position: fixed;
-			width: 100%;	
+			//position: fixed;
+			//width: 100%;	
 		}
 		&.scroll-navbar{
-			opacity: 1;
-			transform: translateY(0%);
-			transition: @trs-site;
+			//opacity: 1;
+			//transform: translateY(0%);
+			//transition: @trs-site;
 		}
 	}
 	&.is--index{
@@ -270,10 +272,10 @@
     	position: relative;
 		transition: @trs-site;
 	    padding: 8px 0px;
+	    border-bottom: 3px solid fadeout(@navbar-color-device, 100%);
 		@media @media-device-lg{
 			color: @navbar-color-device;
 		    display: inline-block;
-		    border-bottom: 3px solid fadeout(@navbar-color-device, 100%);
 		}
 		@media @media-screen-lg{
 			display: block;
@@ -293,12 +295,13 @@
 			background: none;
 			cursor: default;
 			font-weight: 700; 
+			border-bottom-color: @navbar-color-device-hover;
 			@media @media-device-lg {
-				border-bottom-color: @navbar-color-device-hover;
+				
 			}
 			@media @media-screen-lg {
 				color: @navbar-active-color; 
-				background: @navbar-active-bg; 
+				//background: @navbar-active-bg; 
 			}
 		}
 	}

@@ -18,12 +18,14 @@
 		margin-bottom: 35px;
 		@media @media-screen-lg {
 			margin-bottom: 0;
-			padding-top: 5vw;
 			position: relative;
 			z-index: 2;
 			max-width: 650px;
 			min-width: 440px;
 			width: 36vw;
+		}
+		@media @media-size-xxl {
+			padding-top: 5vw;
 		}
 	}
 	&block-item{
@@ -69,7 +71,7 @@
 			color: @b-color;
 		}
 		.calcFontSize(15, 18, 320, 1680);
-		span{font-weight: 700;}
+		//span{font-weight: 700;}
 	}
 	&link{
 		display: block;

@@ -677,12 +677,14 @@
 		margin-bottom: 35px;
 		@media @media-screen-lg {
 			margin-bottom: 0;
-			padding-top: 5vw;
 			position: relative;
 			z-index: 2;
 			max-width: 650px;
 			min-width: 440px;
 			width: 36vw;
+		}
+		@media @media-size-xxl {
+			padding-top: 5vw;
 		}
 	}
 	&block-item{
@@ -728,7 +730,7 @@
 			color: @b-color;
 		}
 		.calcFontSize(15, 18, 320, 1680);
-		span{font-weight: 700;}
+		//span{font-weight: 700;}
 	}
 	&link{
 		display: block;
@@ -1874,19 +1876,21 @@ body.rtl .formError .formErrorArrow {
 		background-color: @navbar-bg-screen;
 		padding-top: 20px;
 		padding-bottom: 20px; 
+		position: fixed;
+		width: 100%;
 		&.opacity{
-			opacity: 0;
-			transform: translateY(-100%);
-			transition: @trs-site;			
+			//opacity: 0;
+			//transform: translateY(-100%);
+			//transition: @trs-site;			
 		}
 		&.fixed{
-			position: fixed;
-			width: 100%;	
+			//position: fixed;
+			//width: 100%;	
 		}
 		&.scroll-navbar{
-			opacity: 1;
-			transform: translateY(0%);
-			transition: @trs-site;
+			//opacity: 1;
+			//transform: translateY(0%);
+			//transition: @trs-site;
 		}
 	}
 	&.is--index{
@@ -2124,10 +2128,10 @@ body.rtl .formError .formErrorArrow {
     	position: relative;
 		transition: @trs-site;
 	    padding: 8px 0px;
+	    border-bottom: 3px solid fadeout(@navbar-color-device, 100%);
 		@media @media-device-lg{
 			color: @navbar-color-device;
 		    display: inline-block;
-		    border-bottom: 3px solid fadeout(@navbar-color-device, 100%);
 		}
 		@media @media-screen-lg{
 			display: block;
@@ -2147,12 +2151,13 @@ body.rtl .formError .formErrorArrow {
 			background: none;
 			cursor: default;
 			font-weight: 700; 
+			border-bottom-color: @navbar-color-device-hover;
 			@media @media-device-lg {
-				border-bottom-color: @navbar-color-device-hover;
+				
 			}
 			@media @media-screen-lg {
 				color: @navbar-active-color; 
-				background: @navbar-active-bg; 
+				//background: @navbar-active-bg; 
 			}
 		}
 	}
@@ -2460,7 +2465,10 @@ body.rtl .formError .formErrorArrow {
 		max-width: 385px;
 		@media @media-size-xs-p {
 			margin-bottom: 20px;
-		}					
+		}	
+		@media @media-screen {
+			margin-bottom: 30px;
+		}				
 	}
 	&row{
 		align-items: flex-end;
@@ -2541,7 +2549,7 @@ body.rtl .formError .formErrorArrow {
 			}
 		}
 		&.is--contacts{
-			@media @media-screen {
+			@media @media-size-xxl {
 				margin-bottom: 5vw;
 			}
 		}
@@ -2634,8 +2642,9 @@ body.rtl .formError .formErrorArrow {
 			margin-bottom: 20px;
 		}	
 		&.is--portfolio-card{
+			margin-bottom: 0;
 			//margin-bottom: 25px;
-			@media @media-screen {margin-bottom: 2.3vw;}
+			//@media @media-screen {margin-bottom: 2.3vw;}
 		}
 		&.is--vacancy{
 			padding-left: 3.2vw;
@@ -2661,6 +2670,10 @@ body.rtl .formError .formErrorArrow {
 			letter-spacing: 1px;
 			@media @media-notsmart {				
 				letter-spacing: 5px;
+			}
+			@media @media-screen-lg {
+				.calcFontSize(26, 40, 1200, 1680);
+				.calcLineHeight(32, 46, 1200, 1680);				
 			}
 		}		
 		&.is--form-panel{
@@ -2952,11 +2965,12 @@ body.rtl .formError .formErrorArrow {
 		}
 	}
 	&decs-block{
-		font-size: @b-fs - 2;
-		line-height: @b-lh - 4;
+		font-size: @b-fs - 1;
+		line-height: @b-lh - 1;
 		margin-bottom: 25px;
+		margin-bottom: 30px;
 		@media @media-screen {
-			margin-bottom: 3vw;
+			//margin-bottom: 3vw;
 		}
 	}
 	&decs-row{
@@ -2964,6 +2978,7 @@ body.rtl .formError .formErrorArrow {
 	}
 	&decs-cols{
 		padding-top: 10px;
+		.makeCols(12, 12);
 	}
 	&decs-item{
 		span{font-weight: 700;}
@@ -3134,8 +3149,8 @@ body.rtl .formError .formErrorArrow {
 		max-width: 960px;
 	}
 	&block{
-		font-size: @b-fs - 2;
-		line-height: @b-lh - 4;
+		font-size: @b-fs - 1;
+		line-height: @b-lh - 1;
 		div, p{
 			@media @media-device{margin-bottom: 15px;}
 			@media @media-screen{margin-bottom: 20px;}

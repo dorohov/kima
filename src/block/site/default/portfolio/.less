@@ -143,11 +143,12 @@
 		}
 	}
 	&decs-block{
-		font-size: @b-fs - 2;
-		line-height: @b-lh - 4;
+		font-size: @b-fs - 1;
+		line-height: @b-lh - 1;
 		margin-bottom: 25px;
+		margin-bottom: 30px;
 		@media @media-screen {
-			margin-bottom: 3vw;
+			//margin-bottom: 3vw;
 		}
 	}
 	&decs-row{
@@ -155,6 +156,7 @@
 	}
 	&decs-cols{
 		padding-top: 10px;
+		.makeCols(12, 12);
 	}
 	&decs-item{
 		span{font-weight: 700;}

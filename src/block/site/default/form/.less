@@ -42,6 +42,21 @@
 			&.is--agreement{
 				text-align: left;
 			}
+			&.is--note{
+				@media @media-notsmart {
+					.makeCols(8, 12);
+				}
+				
+			}
+			&.is--btn{
+				@media @media-notsmart {
+					.btn__item{
+						width: 100%;
+						padding: 10px;
+					}
+				}
+				
+			}
 		}
 		&.is--agreement{
 			padding-top: 20px;
@@ -91,7 +106,8 @@
 		}
 	}
 	&control{
-		background-color: fadeout(@b-form-i-bg, 100%);
+		//background-color: fadeout(@b-form-i-bg, 0%);
+		background-color: @white;
 		border-width: 1px;   
 		border-style: solid;   
 		border-color: @b-form-i-border;   
@@ -375,9 +391,9 @@
 }
 textarea.form__control,
 textarea.form__control.is--sm{
-	height: 150px;
-	padding: 15px 0px;
-	background: none;
+	height: 44px;
+	padding: 10px 15px;
+	background: @white;
 }
 
 .rect-switch{

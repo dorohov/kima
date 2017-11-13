@@ -20,12 +20,14 @@
 		align-items: center;
 		border: 1px solid @white8;
 	    margin: -1px 0 0 -1px;
-		height: 18vw;
 		max-height: 320px;
-		min-height: 220px;
+		min-height: 180px;
 		padding: 20px;
 		&, &:focus, &:hover{color: @b-color;}
 		transition: @trs-site;
+		@media @media-size-xxl {
+			height: 18vw;
+		}
 		&:hover{
 			background-color: @white3;
 		}

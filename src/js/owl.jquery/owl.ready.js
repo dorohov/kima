@@ -13,6 +13,7 @@ $(function() {
 		navText: ['<svg class="icon-svg icon-owl-prev-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev-400"></use></svg>', '<svg class="icon-svg icon-owl-next-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next-400"></use></svg> '],
 		nav: true,
 		dots: false,
+		mouseDrag: false,
 		smartSpeed: 500,		
 		loop:true,
 		onInitialized: function(event) {

@@ -34,9 +34,9 @@
         buttons : true,
 
         // What buttons should appear in the toolbar
-        slideShow  : true,
-        fullScreen : true,
-        thumbs     : true,
+        //slideShow  : true,
+        //fullScreen : true,
+        //thumbs     : true,
         closeBtn   : true,
 
         // Should apply small close button at top right corner of the content

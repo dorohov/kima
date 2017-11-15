@@ -157,8 +157,8 @@
 		&.is--index{
 			text-transform: none;
 			letter-spacing: 0;
-			.calcFontSize(30, 50, 320, 1680);
-			.calcLineHeight(36, 52, 320, 1680);
+			.calcFontSize(24, 50, 320, 1680);
+			.calcLineHeight(30, 52, 320, 1680);
 		}
 		&.is--heading{letter-spacing: 0.5px}
 
@@ -241,6 +241,10 @@
 			font-weight: 400;
 			.calcFontSize(16, 26, 320, 1680);
 			.calcLineHeight(20, 32, 320, 1680);
+			@media @media-screen {
+				.calcFontSize(18, 26, 1200, 1680);
+				.calcLineHeight(24, 32, 1200, 1680);
+			}
 
 		}
 		&.is--form-panel{

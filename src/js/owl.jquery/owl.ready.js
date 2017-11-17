@@ -29,14 +29,8 @@ $(function() {
 				margin: 2,
 			},
 			1025 : {
-   				autoWidth:true, 
 				margin: 0,
-				items:2,
-			},
-			1400 : {
-   				autoWidth:true, 
-				items:2,
-				margin: 0,
+				items:1,
 			}
 		}
 	});

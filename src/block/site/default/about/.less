@@ -1,5 +1,6 @@
 .about-page__{
 	&row{
+		//align-items: center;
 	}
 	&cols{
 		@media @media-size-xs {
@@ -14,24 +15,12 @@
 				.makeCols(12, 12);
 			}
 		}
+		&.is--team{}
 		&.is--note{
-			@media @media-screen {
-				//.makeCols(5, 12);
-			}
-		}
-		/*&.is--cols-screen-7{			
-		    @media @media-screen-lg {
-				height: 41vw;
-		        max-height: 756px;
-		    }
-		}*/
-	}
-	&note{
-		@media @media-screen {
-			padding-top: 2.3vw;
+			@media @media-device {order: -1;}
 		}
 	}
-	&adv-block{
+	/*&adv-block{
 		color: @b-color-a;
 		font-weight: 500;
 		div, p{margin-bottom: 0!important}
@@ -104,5 +93,67 @@
 		right: 3vw;
 		z-index: 2;
 		font-weight: 500;
+	}*/
+	&note{
+		@media @media-size-xxl {
+			padding-left: 3.3vw;
+		}
 	}
+	&text-block{
+		&.text__block{
+			font-size: @b-fs - 2;
+			line-height: @b-lh - 6;
+		}
+	}
+	&tab-pane{
+		display: none;
+		&.is--team{display: none;}
+		&.active{
+			display: block;
+		}
+	}
+	&team-cols{
+		&.is--cols-6{
+			@media @media-size-sm {
+				.makeCols(12, 12);
+			}
+		}
+	}
+}
+.team-card__{
+	&item{}
+	&preview{
+		display: block;
+		position: relative;
+		font-size: @b-fs - 2;
+		line-height: @b-lh - 3;
+		&, &:hover, &:focus{color: @b-color;}
+		@media @media-size-xs-l {
+			max-width: 250px
+		}
+	}
+	&desc{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%; 
+		padding: 10px 20px;
+	}
+	&heading{
+		font-size: @b-fs;
+		line-height: @b-lh - 3;
+		margin-bottom: 0;
+	}
+	&post{}
+	&note{
+		margin-top: 20px;
+		&.text__block{
+			font-size: @b-fs - 2;
+			line-height: @b-lh - 6;
+		}
+		@media @media-screen {
+			display: none;
+		}
+	}
+	&{}
 }

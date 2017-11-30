@@ -1,5 +1,6 @@
 .about-page__{
 	&row{
+		//align-items: center;
 	}
 	&cols{
 		@media @media-size-xs {
@@ -14,24 +15,12 @@
 				.makeCols(12, 12);
 			}
 		}
+		&.is--team{}
 		&.is--note{
-			@media @media-screen {
-				//.makeCols(5, 12);
-			}
-		}
-		/*&.is--cols-screen-7{			
-		    @media @media-screen-lg {
-				height: 41vw;
-		        max-height: 756px;
-		    }
-		}*/
-	}
-	&note{
-		@media @media-screen {
-			padding-top: 2.3vw;
+			@media @media-device {order: -1;}
 		}
 	}
-	&adv-block{
+	/*&adv-block{
 		color: @b-color-a;
 		font-weight: 500;
 		div, p{margin-bottom: 0!important}
@@ -104,7 +93,69 @@
 		right: 3vw;
 		z-index: 2;
 		font-weight: 500;
+	}*/
+	&note{
+		@media @media-size-xxl {
+			padding-left: 3.3vw;
+		}
 	}
+	&text-block{
+		&.text__block{
+			font-size: @b-fs - 2;
+			line-height: @b-lh - 6;
+		}
+	}
+	&tab-pane{
+		display: none;
+		&.is--team{display: none;}
+		&.active{
+			display: block;
+		}
+	}
+	&team-cols{
+		&.is--cols-6{
+			@media @media-size-sm {
+				.makeCols(12, 12);
+			}
+		}
+	}
+}
+.team-card__{
+	&item{}
+	&preview{
+		display: block;
+		position: relative;
+		font-size: @b-fs - 2;
+		line-height: @b-lh - 3;
+		&, &:hover, &:focus{color: @b-color;}
+		@media @media-size-xs-l {
+			max-width: 250px
+		}
+	}
+	&desc{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%; 
+		padding: 10px 20px;
+	}
+	&heading{
+		font-size: @b-fs;
+		line-height: @b-lh - 3;
+		margin-bottom: 0;
+	}
+	&post{}
+	&note{
+		margin-top: 20px;
+		&.text__block{
+			font-size: @b-fs - 2;
+			line-height: @b-lh - 6;
+		}
+		@media @media-screen {
+			display: none;
+		}
+	}
+	&{}
 }
 .block-hover__{ 
 	&block{
@@ -451,6 +502,7 @@
 			height: 1px;
 			transition-delay: 0.3s;
 		}
+		.services-card__item:hover &,
 		.clients-card__item:hover &,
 		.news-card__item:hover &,
 		&:hover{
@@ -2787,11 +2839,15 @@ body.rtl .formError .formErrorArrow {
 	&heading-small{
 		.calcFontSize(16, 28, 320, 1680);
 		.calcLineHeight(20, 32, 320, 1680);
+
+		.calcFontSize(16, 22, 320, 1680);
+		.calcLineHeight(20, 24, 320, 1680);
 		color: @b-color;
 		font-weight: 400;
 		margin: 0;
 		.page-header__heading + &{
 			padding-top: 10px;
+			padding-top: 0px;
 			&.is--form-panel{padding-top: 3px}
 			&.is--vacancy{padding-top: 0}
 			&.is--index{padding-top: 20px;}
@@ -3119,6 +3175,117 @@ body.rtl .formError .formErrorArrow {
 				z-index: 1;
 			//} 
 		} 
+	}
+}
+.services-page__{
+	&row{
+		margin: 0;
+	}
+	&cols{
+		padding: 0;
+		@media @media-size-xs {
+			.makeCols(12, 12);
+		}
+		@media @media-size-xs-l {
+			.makeCols(6, 12);
+		}		
+	}
+}
+.services-card__{ 
+	&item{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		border: 1px solid @white8;
+	    margin: -1px 0 0 -1px;
+		max-height: 320px;
+		min-height: 180px;
+		padding: 20px;
+		&, &:focus, &:hover{color: @b-color;}
+		transition: @trs-site;
+		position: relative;
+		@media @media-size-xxl {
+			height: 18vw;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			background-color: @white3;
+			transition: @trs-site;
+		}
+		&:hover{
+			&::before{
+				opacity: 1;
+			}
+		}
+	}
+	&inner{
+		padding: 10px;
+		position: relative;
+	}
+	&text{}
+	&heading-visible,
+	&heading{
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+	&heading{ 
+		position: absolute;
+		z-index: 1;
+		opacity: 1;
+		transition: @trs-site;
+		bottom: 5px;
+		text-align: center;
+		width: 100%;
+		left: 0;
+		padding: 0 5px;
+		.calcFontSize(14, 23, 320, 1680);
+		.calcLineHeight(16, 25, 320, 1680);
+		.services-card__item:hover &{
+			opacity: 0;
+		}
+		@media @media-screen {
+			bottom: 15px;
+		}
+	}
+	&heading-visible{
+		position: relative;
+		z-index: 2;		
+		opacity: 0;
+		transition: @trs-site;
+		position: absolute;
+		top: 50%;
+		text-align: center;
+		transform: translateY(-100%);
+		left: 0;
+		width: 100%;
+		.calcFontSize(18, 23, 320, 1680);
+		.calcLineHeight(20, 25, 320, 1680);
+		.services-card__item:hover &{
+			opacity: 1;
+		}
+	}
+	&link{
+		position: relative;
+		z-index: 2;
+		opacity: 0; 
+		position: absolute;
+		top: 50%;
+		text-align: center;
+		transform: translateY(0%);
+		left: 0;
+		width: 100%;
+		transition: @trs-site;
+		.services-card__item:hover &{
+			opacity: 1;
+		}
 	}
 }
 //===== social =====//

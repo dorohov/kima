@@ -83,7 +83,7 @@ function fecss_ScreenJS() {
 		return (ctrl.screen.w > 1680);
 	};
 	ctrl.device = function() {
-		return (ctrl.screen.w < 1010);
+		return (ctrl.screen.w < 1025);
 	};
 	ctrl.pc = function() {
 		return (ctrl.screen.w > 1024);

@@ -1,14 +1,15 @@
 'use strict';
 $(function() {
-	$(document.body).on('translated.owl.carousel', '.owl-carousel', {}, function(event){
+	$(document.body).on('translated.owl.carousel', '.owl-portfolio', {}, function(event){
 		event.preventDefault();		
 		var block = $(this);		
-		var items = block.find('.owl-item:not(.cloned)');		
+		var items = block.find('.owl-item');//:not(.cloned)
 		var active = items.filter('.active');		
 		var i = active.find('div').attr('data-owl-item');		
-		$('.owl-count__item.is--count').html(i);		
+		block.next('.owl-count__block').find('.owl-count__item.is--count').html(i);
+		//console.log(i);
 	});	
-	$('.owl-carousel').trigger('translated.owl.carousel');
+	$('.owl-portfolio').trigger('translated.owl.carousel');
 	$('.owl-portfolio').owlCarousel({
 		navText: ['<svg class="icon-svg icon-owl-prev-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/wp-content/themes/azbn7theme/img/svg/sprite.svg#owl-prev-400"></use></svg>', '<svg class="icon-svg icon-owl-next-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/wp-content/themes/azbn7theme/img/svg/sprite.svg#owl-next-400"></use></svg> '],
 		nav: true,

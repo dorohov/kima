@@ -10,7 +10,7 @@ $(function() {
 	});	
 	$('.owl-carousel').trigger('translated.owl.carousel');
 	$('.owl-portfolio').owlCarousel({
-		navText: ['<svg class="icon-svg icon-owl-prev-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev-400"></use></svg>', '<svg class="icon-svg icon-owl-next-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next-400"></use></svg> '],
+		navText: ['<svg class="icon-svg icon-owl-prev-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/wp-content/themes/azbn7theme/img/svg/sprite.svg#owl-prev-400"></use></svg>', '<svg class="icon-svg icon-owl-next-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/wp-content/themes/azbn7theme/img/svg/sprite.svg#owl-next-400"></use></svg> '],
 		nav: true,
 		dots: false,
 		mouseDrag: false,
@@ -36,7 +36,7 @@ $(function() {
 	});
 	if(!screenJS.isXS()) {
 		$('.owl-news').owlCarousel({
-			navText: ['<svg class="icon-svg icon-owl-prev-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev-400"></use></svg>', '<svg class="icon-svg icon-owl-next-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next-400"></use></svg> '],
+			navText: ['<svg class="icon-svg icon-owl-prev-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/wp-content/themes/azbn7theme/img/svg/sprite.svg#owl-prev-400"></use></svg>', '<svg class="icon-svg icon-owl-next-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/wp-content/themes/azbn7theme/img/svg/sprite.svg#owl-next-400"></use></svg> '],
 			nav: true,
 			dots: false,
 			smartSpeed: 500,		
@@ -54,7 +54,7 @@ $(function() {
 		}); 
 	}
 	$('.owl-about').owlCarousel({
-		navText: ['<svg class="icon-svg icon-owl-prev-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev-400"></use></svg>', '<svg class="icon-svg icon-owl-next-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next-400"></use></svg> '],
+		navText: ['<svg class="icon-svg icon-owl-prev-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/wp-content/themes/azbn7theme/img/svg/sprite.svg#owl-prev-400"></use></svg>', '<svg class="icon-svg icon-owl-next-400" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/wp-content/themes/azbn7theme/img/svg/sprite.svg#owl-next-400"></use></svg> '],
 		nav: true,
 		dots: false,
 		smartSpeed: 500,		

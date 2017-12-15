@@ -1,191 +1,92 @@
+<div class="{{block_prefix}}inner-block">
+	[[azbntple 
+		tpl="/src/block/site/default/page-header/heading.html" 
+		header_prefix="page-header__" 
+		header_mod="is--heading  is--portfolio-card  is--center"
+		header_level="h1"
+		header="{{block_heading}}"
+	]]	
+	<div class="{{block_prefix}}decs-block">
+		<div class="{{block_prefix}}decs-item  is--center">
+			<span>Адрес:</span> г. Санкт-Петербург, Петергофское шоссе&nbsp;д.&nbsp;86, корп.&nbsp;3, лит. А
+		</div>
+	</div>
+	<div id="carousel-example-generic" class="{{block_prefix}}carousel carousel slide carousel-fade" data-ride="carousel">
+		<!-- Indicators -->
+		<!--<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>-->
 
-<div class="{{block_prefix}}inner  is--hidden-screen"> 
-	<div class="page-header-panel__block">
-		[[azbntple 
-			tpl="/src/block/site/default/page-header/heading.html" 
-			header_prefix="page-header__" 
-			header_mod="is--heading  is--portfolio-card"
-			header_level="h1"
-			header="{{block_heading}}"
-		]]	
+
+		<div class="{{block_prefix}}carousel-inner carousel-inner">
+			<div class="{{block_prefix}}carousel-item item active">
+				<a href="http://via.placeholder.com/1070x680" data-fancybox="gallery" class="{{block_prefix}}carousel-link"><img src="http://via.placeholder.com/1070x680" alt="" class="img-responsive"></a>
+	    	</div>
+			<div class="{{block_prefix}}carousel-item item">
+				<a href="http://via.placeholder.com/1070x680" data-fancybox="gallery" class="{{block_prefix}}carousel-link"><img src="http://via.placeholder.com/1070x680" alt="" class="img-responsive"></a>
+	    	</div>
+	    </div>
+		<a class="left carousel-control {{block_prefix}}carousel-control" href="#carousel-example-generic" data-slide="prev">
+			[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="arrow-left" ]]
+		</a>
+		<a class="right carousel-control {{block_prefix}}carousel-control" href="#carousel-example-generic" data-slide="next">
+			[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="arrow-right" ]]
+		</a>
 	</div>
-</div>
-<!--
-<ul class="{{block_prefix}}tabs-nav">
-	<li class="{{block_prefix}}tabs-nav-item  active">
-		<a href="#portfolio-slider-1" data-toggle="tab" class="{{block_prefix}}tabs-nav-link">Экстерьер</a>
-	</li>
-	<li class="{{block_prefix}}tabs-nav-item">
-		<div class="{{block_prefix}}tabs-nav-link  is--active">/</div>
-	</li>
-	<li class="{{block_prefix}}tabs-nav-item"> 
-		<a href="#portfolio-slider-2" data-toggle="tab" class="{{block_prefix}}tabs-nav-link">Интерьер</a>
-	</li>
-</ul>-->
-<div class="{{block_prefix}}tabs-content">
-	<div class="{{block_prefix}}tabs-pane fade in active" id="portfolio-slider-1">
-		<div class="{{block_prefix}}owl-block">
-			<div class="owl-portfolio  {{block_prefix}}owl  is--portfolio">
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="01"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item1-1920x1080.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item1-520x290.jpg"
-					block_prefix="portfolio-card__"
-					block_fancybox="portfolio-gallery1"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="02"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item2-1920x1080.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item2-520x290.jpg"
-					block_prefix="portfolio-card__"
-					block_fancybox="portfolio-gallery1"
-				]]	
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="03"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item1-1920x1080.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item1-520x290.jpg"
-					block_prefix="portfolio-card__"
-					block_fancybox="portfolio-gallery1"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="04"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item2-1920x1080.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item2-520x290.jpg"
-					block_prefix="portfolio-card__"
-					block_fancybox="portfolio-gallery1"
-				]]	
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="05"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item1-1920x1080.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item1-520x290.jpg"
-					block_prefix="portfolio-card__"
-					block_fancybox="portfolio-gallery1"
-				]]
-			</div>	
-			<div class="owl-count__block  is--portfolio">
-				<span class="owl-count__item  is--count">01</span>
-				<span class="owl-count__item">/05</span>
+	[[azbntple 
+		tpl="/src/block/site/default/page-header/heading.html" 
+		header_prefix="page-header__" 
+		header_mod="is--heading  is--center is--portfolio-card-sm"
+		header_level="h2"
+		header="О проекте"
+	]]
+	<div class="{{block_prefix}}decs-block">
+		<div class="{{block_prefix}}decs-row row  is--wrap  ">
+			<div class="{{block_prefix}}decs-cols cols">
+				<div class="{{block_prefix}}decs-item">
+					<span>Заказчик:</span> ООО «Оптима Групп»
+				</div>
+			</div>
+			<div class="{{block_prefix}}decs-cols cols">
+				<div class="{{block_prefix}}decs-item">
+					<span>Стадия:</span> Проект
+				</div>
+			</div>
+			<div class="{{block_prefix}}decs-cols cols">
+				<div class="{{block_prefix}}decs-item">
+					<span>Год: 2016&nbsp;год</span>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="{{block_prefix}}tabs-pane fade" id="portfolio-slider-2">				
-		<div class="{{block_prefix}}owl-block">
-			<div class="owl-portfolio  {{block_prefix}}owl  is--portfolio">
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="01"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item3-1920x1080.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item3-520x290.jpg"
-					block_prefix="portfolio-card__"
-					block_fancybox="portfolio-gallery2"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="02"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item4-1920x1080.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item4-520x290.jpg"
-					block_prefix="portfolio-card__"
-					block_fancybox="portfolio-gallery2"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="03"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item3-1920x1080.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item3-520x290.jpg"
-					block_prefix="portfolio-card__"
-					block_fancybox="portfolio-gallery2"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="04"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item4-1920x1080.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item4-520x290.jpg"
-					block_prefix="portfolio-card__"
-					block_fancybox="portfolio-gallery2"
-				]]
-				[[azbntple 
-					tpl="/src/block/site/default/portfolio/card-slider.html" 
-					block_item="05"
-					block_preview="{{url-path-img}}/temp/portfolio-slider-item3-1920x1080.jpg"
-					block_preview_xs="{{url-path-img}}/temp/portfolio-slider-item3-520x290.jpg"
-					block_prefix="portfolio-card__"
-					block_fancybox="portfolio-gallery2"
-				]]
-			</div>
-			<div class="owl-count__block  is--portfolio">
-				<span class="owl-count__item  is--count">01</span>
-				<span class="owl-count__item">/05</span>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="{{block_prefix}}inner"> 
-	<div class="mCustomScrollbar {{block_prefix}}scroll" data-mcs-theme="gold">
-		<div class="page-header-panel__block  is--hidden-device">
-			[[azbntple 
-				tpl="/src/block/site/default/page-header/heading.html" 
-				header_prefix="page-header__" 
-				header_mod="is--heading  is--portfolio-card"
-				header_level="h1"
-				header="{{block_heading}}"
-			]]	
-		</div>
-		<div class="{{block_prefix}}decs-block">
-			<div class="{{block_prefix}}decs-row row  is--wrap  ">
-				<div class="{{block_prefix}}decs-cols cols">
-					<div class="{{block_prefix}}decs-item">
-						<span>Адрес:</span> г. Санкт-Петербург, Петергофское шоссе&nbsp;д.&nbsp;86, корп.&nbsp;3, лит. А
-					</div>
-				</div>
-				<div class="{{block_prefix}}decs-cols cols">
-					<div class="{{block_prefix}}decs-item">
-						<span>Заказчик:</span> ООО «Оптима Групп»
-					</div>
-				</div>
-				<div class="{{block_prefix}}decs-cols cols">
-					<div class="{{block_prefix}}decs-item">
-						<span>Стадия:</span> Проект
-					</div>
-				</div>
-				<div class="{{block_prefix}}decs-cols cols">
-					<div class="{{block_prefix}}decs-item">
-						<span>Год: 2016&nbsp;год</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="{{block_prefix}}text-block  text__block">
-			<h3>Задача и ее решение:</h3>
-			<p>Перед KIMA architects стояла задача разработать архитектурные решения фасадов объединяющие название комплекса, фирменный стиль проекта и&nbsp;его местоположение. Проект находится на&nbsp;юго-западе Петербурга, недалеко от&nbsp;Стрельны. В&nbsp;процессе работы, мы&nbsp;придумали идею показать на&nbsp;фасадах изменение цвета кленовых листьях в&nbsp;зависимости от&nbsp;времен года, связав тем самым название и&nbsp;архитектуру, а&nbsp;также архитектуру и&nbsp;местоположение&nbsp;— добавив в&nbsp;нее классические элементы&nbsp;— карнизы и&nbsp;рустовку. </p>
-			<h5>По&nbsp;итогам работы над данным проектом, клиент получил:</h5>
-			<ul> 
-				<li>Альбом&nbsp;АР, стадия Р</li>
-				<li>Дизайн-проект МОП</li>
-				<li>Дизайн-проект паркинг</li>
-			</ul>
-			<h3>Технико-экономические показатели:</h3>
-			<ul> 
-				<li>Общая площадь объекта: 17&nbsp;643&nbsp;м²</li>
-				<li>Надземная: 13&nbsp;312&nbsp;м²</li>
-				<li>Подземная: 4&nbsp;331&nbsp;м²</li>
-				<li>Строительный объем: 72 407м³</li>
-				<li>Площадь участка: 0,48&nbsp;га</li>
-				<li>Площадь застройки: 2&nbsp;833&nbsp;м²</li>
-				<li>Кол-во этажей: 5-6</li>
-				<li>Кол-во квартир: 39</li>
-				<li>Кол-во м.\м.&nbsp;в&nbsp;подземн. стоянке: 97</li>
-			</ul>
-			<h3>Авторы:</h3>
-			<ul> 
-				<li>Иванов Кирилл&nbsp;— руководитель проекта</li>
-				<li>Астахова Мария&nbsp;— главный архитектор</li>
-				<li>Захарова Галина&nbsp;— дизайнер.</li>
-			</ul>
-		</div>
+	<div class="{{block_prefix}}text-block  text__block">
+		<h3>Задача и ее решение:</h3>
+		<p>Перед KIMA architects стояла задача разработать архитектурные решения фасадов объединяющие название комплекса, фирменный стиль проекта и&nbsp;его местоположение. Проект находится на&nbsp;юго-западе Петербурга, недалеко от&nbsp;Стрельны. В&nbsp;процессе работы, мы&nbsp;придумали идею показать на&nbsp;фасадах изменение цвета кленовых листьях в&nbsp;зависимости от&nbsp;времен года, связав тем самым название и&nbsp;архитектуру, а&nbsp;также архитектуру и&nbsp;местоположение&nbsp;— добавив в&nbsp;нее классические элементы&nbsp;— карнизы и&nbsp;рустовку. </p>
+		<h5>По&nbsp;итогам работы над данным проектом, клиент получил:</h5>
+		<ul> 
+			<li>Альбом&nbsp;АР, стадия Р</li>
+			<li>Дизайн-проект МОП</li>
+			<li>Дизайн-проект паркинг</li>
+		</ul>
+		<h3>Технико-экономические показатели:</h3>
+		<ul> 
+			<li>Общая площадь объекта: 17&nbsp;643&nbsp;м²</li>
+			<li>Надземная: 13&nbsp;312&nbsp;м²</li>
+			<li>Подземная: 4&nbsp;331&nbsp;м²</li>
+			<li>Строительный объем: 72 407м³</li>
+			<li>Площадь участка: 0,48&nbsp;га</li>
+			<li>Площадь застройки: 2&nbsp;833&nbsp;м²</li>
+			<li>Кол-во этажей: 5-6</li>
+			<li>Кол-во квартир: 39</li>
+			<li>Кол-во м.\м.&nbsp;в&nbsp;подземн. стоянке: 97</li>
+		</ul>
+		<h3>Авторы:</h3>
+		<ul> 
+			<li>Иванов Кирилл&nbsp;— руководитель проекта</li>
+			<li>Астахова Мария&nbsp;— главный архитектор</li>
+			<li>Захарова Галина&nbsp;— дизайнер.</li>
+		</ul>
 	</div>
 </div>

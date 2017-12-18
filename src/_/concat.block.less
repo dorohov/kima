@@ -3060,7 +3060,7 @@ body.rtl .formError .formErrorArrow {
 		}
 	}
 	&inner-block{
-		max-width: 1070px;
+		max-width: 1210px;
 		margin-left: auto;
 		margin-right: auto;
 	}		
@@ -3110,6 +3110,16 @@ body.rtl .formError .formErrorArrow {
 		@media @media-screen {
 			margin-bottom: 4vw;
 		}
+		@media @media-size-md {
+			max-width: 760px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media @media-size-lg {
+			max-width: 760px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 	&carousel-control{
 		position: absolute;
@@ -3140,6 +3150,20 @@ body.rtl .formError .formErrorArrow {
 	}
 	&carousel-link{
 		cursor: url("@{url-path-img}/default/cursor.png"), default;
+		img{
+			margin: 0 auto;
+			@media @media-size-xs {
+				max-height: 200px!important;
+			}
+			@media @media-size-sm {
+				max-height: 400px!important;
+			}
+			@media @media-screen {
+				min-height: 430px!important;
+				max-height: 680px!important;
+				height: 37vw!important;
+			}
+		}
 	}
 	&decs-block{
 		font-size: @b-fs - 1;

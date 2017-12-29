@@ -1,0 +1,68 @@
+<div class="{{contacts_prefix}}block  {{contacts_mod}}">
+	<div class="{{contacts_prefix}}inner"> 
+		<div class="page-header-panel__block  is--contacts">	
+			<div class="page-header-panel__row row  is--gutter  is--jcsb  is--aic">	
+				<div class="page-header-panel__cols cols  is--heading">	
+					[[azbntple 
+						tpl="/src/block/site/default/page-header/heading.html" 
+						header_prefix="page-header__" 
+						header_mod="is--heading"
+						header_level="h1"
+						header="{{block_heading}}"
+					]]	
+				</div>	
+			</div>
+		</div>
+		<div class="{{contacts_prefix}}block-item">
+			<div class="{{contacts_prefix}}item">
+				[[azbntple 
+					tpl="/src/block/site/default/contacts/item-icon.html" 
+					block_prefix="contact-item__"
+					block_mod="is--nobg"
+					block_icon="contacts-location"
+					block_name="{{contacts.address}}"
+				]]			
+			</div>	
+			<div class="{{contacts_prefix}}item">
+				[[azbntple 
+					tpl="/src/block/site/default/contacts/item-icon-link.html" 
+					block_prefix="contact-item__"
+					block_mod="is--nobg"
+					block_icon="contacts-tel"
+					block_name="{{contacts.phone}}"
+					block_link="tel:{{contacts.phone_tel}}"
+					block_attr="  "
+				]]			
+			</div>	
+			<div class="{{contacts_prefix}}item">
+				[[azbntple 
+					tpl="/src/block/site/default/contacts/item-icon-link.html" 
+					block_prefix="contact-item__"
+					block_mod="is--nobg"
+					block_icon="contacts-email"
+					block_name="{{contacts.email_name}}"
+					block_link="mailto:{{contacts.email}}"
+					block_attr="  "
+				]]			
+			</div>		
+		</div>	
+		[[azbntple 
+			tpl="/src/block/site/default/form/panel.html"
+			block_prefix="form-panel__"
+			block_mod="is--contacts"
+			block_heading_mod="is--form-panel" 
+			block_heading="Хотите с нами сотрудничать?" 
+			block_heading_small="Оставьте заявку и мы свяжемся с вами" 
+			block_form_prefix="form__"
+			block_form_id="fvg"
+			block_form_mod="is--inline" 
+			block_form_heading="Хотите с нами сотрудничать?"
+			block_form_color="  "
+			block_form_btn="Отправить" 
+			block_form_btn_mod="is--sm"
+		]]	
+	</div>
+	<div class="{{contacts_prefix}}map  {{contacts_mod}}">
+		<div class="{{contacts_prefix}}map-item" id="map-google"></div>
+	</div>
+</div>

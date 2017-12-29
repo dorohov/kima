@@ -1,0 +1,38 @@
+<div class="content-block {{block_prefix}}content-block" role="main">		
+	<div class="container content-block__container {{block_prefix}}container  is--noheight  is--nopadding-bottom">
+		<div class="page-header-panel__block">	
+			<div class="page-header-panel__row row  is--gutter  is--jcsb  is--aic">	
+				<div class="page-header-panel__cols cols  is--heading">	
+					[[azbntple 
+						tpl="/src/block/site/default/page-header/heading.html" 
+						header_prefix="page-header__" 
+						header_mod="is--heading"
+						header_level="h1"
+						header="{{block_heading}}"
+					]]	
+				</div>
+				<div class="page-header-panel__cols cols  is--filter">
+					[[azbntple 
+						tpl="/src/block/site/default/filter/panel.html"
+						block_prefix="filter-panel__"
+						block_mod="  "
+					]] 
+				</div>	
+				<div class="page-header-panel__cols cols  is--btn">
+					[[azbntple 
+						tpl="/src/block/site/default/button/link.html"
+						button_prefix="btn__" 
+						button_mod="is--sm"
+						button_link="##" 
+						button_link="/services.html"
+						button_name="Услуги"
+					]]
+				</div>	
+			</div>
+		</div>
+	</div>		
+	[[azbntple 
+		tpl="/src/block/site/default/portfolio/panel.html"
+		block_prefix="portfolio-panel__" 
+	]]
+</div>

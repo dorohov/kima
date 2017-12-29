@@ -1,0 +1,159 @@
+.about-page__{
+	&row{
+		//align-items: center;
+	}
+	&cols{
+		@media @media-size-xs {
+			.makeCols(12, 12);
+		}
+		@media @media-size-sm-p {
+			.makeCols(12, 12);
+		}
+		@media @media-size-md {
+			&.is--cols-screen-5,
+			&.is--cols-screen-7{
+				.makeCols(12, 12);
+			}
+		}
+		&.is--team{}
+		&.is--note{
+			@media @media-device {order: -1;}
+		}
+	}
+	/*&adv-block{
+		color: @b-color-a;
+		font-weight: 500;
+		div, p{margin-bottom: 0!important}
+		@media @media-screen {
+			padding-top: 10px;
+		}
+	}
+	&adv-block-cols{
+		@media @media-size-sm {
+			.makeCols(4, 12);
+		}
+		@media @media-size-md {
+			.makeCols(4, 12);
+		}
+		@media @media-screen-lg {
+			.makeCols(6, 12);
+		}
+		@media @media-size-xxl {
+			.makeCols(4, 12);
+		}
+	}
+	&adv-row{
+		margin-left: -2px;
+		margin-right: -2px;
+		align-items: flex-end;
+		flex-wrap: nowrap;
+	}
+	&adv-cols{
+		padding-left: 2px;
+		padding-right: 2px;
+		&.is--num{
+			font-weight: 700;
+			.calcFontSize(40, 70, 320, 1680);
+			.calcLineHeight(30, 60, 320, 1680);
+		}
+		&.is--text{			
+			line-height: @b-lh - 6;    
+			html.msie &{
+				max-width: 135px;
+			}
+		}
+	}
+	&owl-panel{
+		&.owl-panel{
+		    @media @media-screen-lg {
+				position: absolute;
+				z-index: 1;
+				right: 0;
+				top: 0px;
+				width: 56.5vw;
+				height: 41vw;
+			    max-width: 1080px;
+		        max-height: 756px;
+		        //overflow: hidden;
+		        .owl-about,
+		        .owl-stage,
+		        .owl-stage-outer{
+		        	height: 100%;
+		        }
+		    }
+		}
+	}
+	&owl-item{
+		position: relative;
+	}
+	&owl-heading{
+		position: absolute;
+		top: 2vw;
+		left: 3vw;
+		right: 3vw;
+		z-index: 2;
+		font-weight: 500;
+	}*/
+	&note{
+		@media @media-size-xxl {
+			padding-left: 3.3vw;
+		}
+	}
+	&text-block{
+		&.text__block{
+			font-size: @b-fs - 2;
+			line-height: @b-lh - 6;
+		}
+	}
+	&tab-pane{
+		display: none;
+		&.is--team{display: none;}
+		&.active{
+			display: block;
+		}
+	}
+	&team-cols{
+		&.is--cols-6{
+			@media @media-size-sm {
+				.makeCols(12, 12);
+			}
+		}
+	}
+}
+.team-card__{
+	&item{}
+	&preview{
+		display: block;
+		position: relative;
+		font-size: @b-fs - 2;
+		line-height: @b-lh - 3;
+		&, &:hover, &:focus{color: @b-color;}
+		@media @media-size-xs-l {
+			max-width: 250px
+		}
+	}
+	&desc{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%; 
+		padding: 10px 20px;
+	}
+	&heading{
+		font-size: @b-fs;
+		line-height: @b-lh - 3;
+		margin-bottom: 0;
+	}
+	&post{}
+	&note{
+		margin-top: 20px;
+		&.text__block{
+			font-size: @b-fs - 2;
+			line-height: @b-lh - 6;
+		}
+		@media @media-screen {
+			display: none;
+		}
+	}
+	&{}
+}

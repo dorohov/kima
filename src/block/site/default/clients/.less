@@ -1,0 +1,50 @@
+.clients-page__{
+	&row{
+		margin: 0;
+	}
+	&cols{
+		padding: 0;
+		@media @media-size-xs {
+			.makeCols(12, 12);
+		}
+		@media @media-size-xs-l {
+			.makeCols(6, 12);
+		}		
+	}
+}
+.clients-card__{
+	&item{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		border: 1px solid @white8;
+	    margin: -1px 0 0 -1px;
+		max-height: 320px;
+		min-height: 180px;
+		padding: 20px;
+		&, &:focus, &:hover{color: @b-color;}
+		transition: @trs-site;
+		@media @media-size-xxl {
+			height: 18vw;
+		}
+		&:hover{
+			background-color: @white3;
+		}
+	}
+	&inner{}
+	&text{}
+	&heading{
+		font-weight: 400;
+		margin-bottom: 10px;
+		.calcFontSize(20, 23, 320, 1680);
+		.calcLineHeight(22, 25, 320, 1680);
+	}
+	&link{
+		opacity: 0;
+		transition: @trs-site;
+		.clients-card__item:hover &{
+			opacity: 1;
+		}
+	}
+}

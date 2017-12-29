@@ -1,0 +1,131 @@
+.filter-panel__{
+	&row{
+		margin-left: -7px;
+		margin-right: -7px;
+	}
+	&cols{
+		padding-left: 7px;
+		padding-right: 7px;
+		@media @media-size-xs-p {
+			//.makeCols(12, 12);
+		}
+		@media @media-screen {
+			//margin-bottom: 1.5vw;
+		}
+	}
+}
+.select-block__{
+	&block{
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			width: ~"calc(100% - 15px)";
+			left: 0;
+			bottom: 0;
+			height: 1px;
+			background-color: @b-color-a;
+		}
+		@media @media-size-xs {
+			margin-bottom: 10px;
+		}
+	}
+	&row{
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	&cols{
+		padding-left: 5px;
+		padding-right: 5px;
+		@media @media-size-xs {
+			//.makeCols(12, 12);
+		}
+	}
+	&heading{
+		color: @b-color-a;
+		font-size: @b-fs - 2;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		@media @media-size-xs {
+			margin-bottom: 5px;
+		}
+	}	
+	&select-box{
+		position: relative;
+		overflow: hidden;
+		width: ~"calc(100% - 15px)";
+		html.msie &{
+			width: ~"calc(100% - 20px)";
+		}	
+		html.safari &{
+			width: 100%;
+		}
+		html.macintosh.chrome &,
+		html.macintosh.yabrowser &{
+			padding-left: 20px;
+		}
+	}
+	&select{
+		position: relative;
+		z-index: 5;
+		width: ~"calc(100% + 15px)";
+		display: block;
+		border: 0;
+		outline: 0;
+		background-color: fadeout(@white, 100%);
+		padding-left: 10px;
+		color: @black24;
+		font-size: @b-fs - 2;
+		&,&:focus{
+			border: 0;
+			outline: 0;
+		}
+		&::-moz-focus-inner {
+			border: none;
+			outline: none;
+		}
+		&.is--xs{
+			font-size: @b-fs - 2;
+			font-weight: 500;
+			padding-left: 30px;
+		}
+		html.msie &{
+			width: ~"calc(100% + 20px)";
+		}
+		html.safari &{
+			@media @media-screen {
+				width: 100%;
+				padding-left: 0;
+			}
+		}
+		html.macintosh.chrome &,
+		html.macintosh.yabrowser &{
+			padding-left: 0px;
+		}
+		/*html.macintosh.yabrowser &{
+			padding-left: 0;
+			left: 15px;
+		}*/
+	}
+	&select-icon{
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		color: @b-color-a;
+		svg{display: block;} 
+		&.is--border{
+			left: 20px;
+		}
+		&.is--xs{
+			width: 20px;
+			height: 20px;
+		}
+		html.safari &{
+			@media @media-screen {display: none;}
+		}
+	}
+}

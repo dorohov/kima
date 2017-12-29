@@ -1,0 +1,254 @@
+.portfolio-panel__{
+	&panel{}
+	&block{
+		margin-bottom: 2px;
+		&.is--index{
+			position: relative;
+			padding-top: 35px;
+			padding-bottom: 35px;
+			@media @media-screen {
+				padding-top: 8vw;
+				padding-bottom: 10vw;
+			}
+		}
+	}
+	&container{
+		max-width: 1920px;
+		padding-left: 1px;
+		padding-right: 1px;
+	}
+	&heading{
+		&.is--index{
+			.calcFontSize(24, 44, 320, 1680);
+			.calcLineHeight(30, 50, 320, 1680);
+			margin-bottom: 25px;
+			@media @media-screen {margin-bottom: 2.5vw}
+		}
+	}
+	&row{		
+		margin-left: -1px;
+		margin-right: -1px;
+		&.is--wrap{
+			margin-top: -2px;
+			& > .cols{
+				padding-top: 2px;
+			}
+		}
+	}
+	&cols{
+		padding-left: 1px;
+		padding-right: 1px;
+		@media @media-size-xs-p {
+			.makeCols(12, 12);
+		}
+		@media @media-size-xs-l {
+			.makeCols(6, 12);
+		}
+		@media @media-notsmart {
+			width: 28.5%;
+			&:nth-child(6n+1),
+			&:nth-child(6n+6){
+	    		width: 43%;
+			}
+		}
+	}
+}
+.portfolio-card__{
+	&item{		
+		position: relative;
+		overflow: hidden;
+		@media @media-notsmart {
+			height: 22vw;
+			max-height: 410px;
+		}
+		@media @media-size-lg {
+			height: 16vw;
+		}
+	}
+	&preview{
+		display: block;
+		transition: @trs-site;
+		@media @media-size-xs {
+			background: none!important;
+		}
+		@media @media-notsmart {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.portfolio-card__item:hover &{
+			transform: scale(1.2);
+			transition: all 1s;
+		}
+	}
+	&preview-picture{
+		img{
+			@media @media-notsmart {
+				opacity: 0;
+			}
+		}
+	}
+	&slider-item{
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	&slider-link{
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		cursor: url("@{url-path-img}/default/cursor.png"), default;
+	}
+}
+.portfolio-card-panel__{
+	&owl-block{
+		position: relative;
+		height: 100%;
+	}
+	&owl{
+		height: 100%;	
+		@media @media-device {
+			margin-bottom: 1px;
+		}
+		@media @media-size-md{
+			height: ~"calc(100vh - @{navbar-md} - @{footer-screen})";
+		}
+		@media @media-screen-lg {
+			height: ~"calc(100vh - @{navbar-screen} - @{footer-screen})";
+		}
+		.owl-item,
+		.owl-stage,
+		.owl-stage-outer{
+			height: 100%;
+		}
+	}
+	&inner{		
+		width: 100%;
+		padding: 15px 15px 0;
+		@media @media-screen {
+			padding: 15px;
+			background-color: fadeout(@white, 10%);
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			right: 0;
+			width: 50%;
+			height: 100%;
+			padding: 2.1vw 3.1vw 20px 5.1vw;
+		}
+		@media @media-screen-lg {			
+			right: 3%;
+			width: 50%;
+		}
+		@media @media-size-xxl {			
+			right: 6%;
+			width: 43%;
+		}
+		&.is--hidden-screen{
+			@media @media-screen {
+				display: none;
+			}
+		}
+	}
+	&scroll{
+		@media @media-device {
+			touch-action: auto!important;
+		}
+		@media @media-screen {
+			height: 100%;
+		}
+	}
+	&decs-block{
+		font-size: @b-fs - 1;
+		line-height: @b-lh - 1;
+		margin-bottom: 25px;
+		margin-bottom: 30px;
+		@media @media-screen {
+			//margin-bottom: 3vw;
+		}
+	}
+	&decs-row{
+		margin-top: -10px;
+	}
+	&decs-cols{
+		padding-top: 10px;
+		.makeCols(12, 12);
+	}
+	&decs-item{
+		span{font-weight: 700;}
+	}
+	&text-block{
+		font-size: @b-fs - 2;
+		line-height: @b-lh - 4;
+	}
+	&tabs-nav{
+		list-style: none;
+		display: flex;
+		margin:  0 15px 15px;
+		@media @media-screen {		
+			margin: 0;	
+			position: absolute;
+			z-index: 2;
+			//bottom: 0;
+			bottom: 20px;
+			left: 70px;
+		}
+		@media @media-size-xxl {			
+			bottom: 6.5%;
+			left: 33.6%;
+		}
+	}
+	&tabs-nav-item{}
+	&tabs-nav-link{
+		&, &:focus, &:hover{color: @b-color-a;}
+		@media @media-screen {	
+			&, &:focus, &:hover{color: @white;}
+		}
+		&.is--active,
+		.portfolio-card-panel__tabs-nav-item.active &{
+			font-weight: 700;
+			text-transform: uppercase;
+			.calcFontSize(20, 23, 320, 1680);
+			letter-spacing: 3px;
+		}
+	}
+	&tabs-content{
+		position: relative;		
+		height: 100%;
+		@media @media-device {
+			max-height: 285px;
+			height: 27.835vw;
+		}	
+		@media @media-size-xs-p {
+			height: 56vw;
+		}
+	}
+	&tabs-pane{
+		//display: none;	
+		//@media @media-screen {
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			z-index: -1;
+			transition: @trs-site;
+		//}
+		&.active{
+			//display: block;
+			//@media @media-screen {
+				opacity: 1;
+				z-index: 1;
+			//} 
+		} 
+	}
+}
